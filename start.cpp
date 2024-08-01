@@ -6,6 +6,7 @@
 #define rlj(n,rc) for(int j=n;j>rc;j--)
 #define rlk(n,rc) for(int k=n;k>rc;k--)
 #define ll long long
+#define pb push_back
 #define nl "\n"
 using namespace std;
 
