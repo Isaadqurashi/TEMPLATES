@@ -7,7 +7,9 @@
 #define rlk(n,rc) for(int k=n;k>rc;k--)
 #define ll long long
 #define pb push_back
+#define all(v) v.begin(), v.end()
 #define nl "\n"
+const int MOD = 998244353;
 using namespace std;
 
 void saad(){}
