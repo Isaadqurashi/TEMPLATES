@@ -5,6 +5,7 @@
 #define rli(n,rc) for(int i=n;i>rc;i--)
 #define rlj(n,rc) for(int j=n;j>rc;j--)
 #define rlk(n,rc) for(int k=n;k>rc;k--)
+#define sz(a) a.size()
 #define ll long long
 #define pb push_back
 #define all(v) v.begin(), v.end()
@@ -15,7 +16,7 @@ using namespace std;
 void saad(){}
 
 int main() {
-    ios::sync_with_stdio(0),cin.tie(0);
+    ios::sync_with_stdio(false),cin.tie(nullptr);
     int t;
     cin>>t;
     while(t--){
