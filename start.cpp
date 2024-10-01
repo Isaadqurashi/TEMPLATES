@@ -9,6 +9,7 @@
 #define ll long long
 #define pb push_back
 #define all(v) v.begin(), v.end()
+#define rall(v) v.rbegin(), v.rend()
 #define nl "\n"
 const int MOD = 1e9+7;
 using namespace std;
