@@ -4,6 +4,8 @@
 #define rli(n,rc) for(int i=n;i>rc;i--)
 #define sz(a) a.size()
 #define ll long long
+#define pb push_back
+#define all(v) v.begin(), v.end()
 #define nl "\n"
 using namespace std;
 
