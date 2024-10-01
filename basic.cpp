@@ -6,6 +6,7 @@
 #define ll long long
 #define pb push_back
 #define all(v) v.begin(), v.end()
+#define rall(v) v.rbegin(), v.rend()
 #define nl "\n"
 using namespace std;
 
