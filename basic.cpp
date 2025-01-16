@@ -4,6 +4,8 @@
 #define sz(a) a.size()
 #define ll long long
 #define pb push_back
+#define vi vector<int>
+#define vll vector<ll>
 #define all(v) v.begin(), v.end()
 #define rall(v) v.rbegin(), v.rend()
 #define nl "\n"
