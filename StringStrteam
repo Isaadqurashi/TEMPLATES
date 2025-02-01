@@ -1,0 +1,88 @@
+include <bits/stdc++.h>
+define fli(i,fc,n) for(int i=fc;i<n;i++)
+define rli(i,n,rc) for(int i=n;i>rc;i--)
+define sz(a) a.size()
+define ll long long
+define pb push_back
+define vi vector<int>
+define vll vector<ll>
+define all(v) v.begin(), v.end()
+define rall(v) v.rbegin(), v.rend()
+define nl "\n"
+using namespace std;
+
+void saad(){
+    vi in,po,w;
+    string s1,s2,s3;
+    getline(cin,s1);
+    getline(cin,s2);
+    getline(cin,s3);
+    int x;
+    stringstream ss1(s1),ss2(s2),ss3(s3);
+    while(ss1>>x) in.pb(x);
+    while(ss2>>x) po.pb(x);
+    while(ss3>>x) w.pb(x);
+    fli(i,0,sz(in)) cerr << in[i] << " ";
+    cerr << nl;
+    fli(i,0,sz(po)) cerr << po[i] << " ";
+    cerr << nl;
+    fli(i,0,sz(w)) cerr << w[i] << " ";
+    cerr << nl;
+}
+
+int main() {
+    ios::sync_with_stdio(false),cin.tie(nullptr);
+    int t;
+    cin >> t;
+    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+    while(t--){
+        saad();
+    }
+}
+
+
+# OR
+
+include <bits/stdc++.h>
+define fli(i,fc,n) for(int i=fc;i<n;i++)
+define rli(i,n,rc) for(int i=n;i>rc;i--)
+define sz(a) a.size()
+define ll long long
+define pb push_back
+define vi vector<int>
+define vll vector<ll>
+define all(v) v.begin(), v.end()
+define rall(v) v.rbegin(), v.rend()
+define nl "\n"
+using namespace std;
+
+void saad(){
+    vi in, po, w;
+    string s1, s2, s3;
+    
+    if (!getline(cin, s1) || !getline(cin, s2) || !getline(cin, s3)) return; // Handle input failure
+
+    stringstream ss1(s1), ss2(s2), ss3(s3);
+    int x;
+    while (ss1 >> x) in.pb(x);
+    while (ss2 >> x) po.pb(x);
+    while (ss3 >> x) w.pb(x);
+
+    // Debug output without extra spaces
+    if (!in.empty()) fli(i, 0, sz(in)) cerr << in[i] << (i + 1 < sz(in) ? " " : "");
+    cerr << nl;
+    if (!po.empty()) fli(i, 0, sz(po)) cerr << po[i] << (i + 1 < sz(po) ? " " : "");
+    cerr << nl;
+    if (!w.empty()) fli(i, 0, sz(w)) cerr << w[i] << (i + 1 < sz(w) ? " " : "");
+    cerr << nl;
+}
+
+int main() {
+    ios::sync_with_stdio(false), cin.tie(nullptr);
+    int t;
+    cin >> t;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');  // Properly clear input buffer
+    while (t--) {
+        saad();
+    }
+}
