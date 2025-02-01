@@ -15,6 +15,10 @@ void saad(){}
 
 int main() {
     ios::sync_with_stdio(false),cin.tie(nullptr);
+    #ifdef LOCAL
+    freopen("in.txt", "r", stdin);
+    freopen("out.txt", "w+", stdout);
+    #endif
     int t;
     cin >> t;
     while(t--){
