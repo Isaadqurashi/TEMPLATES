@@ -1,0 +1,38 @@
+void saad() {
+    int q;
+    cin >> q;
+    priority_queue<int, vector<int>, greater<int>> h, a;
+    queue<int> t1, t2;
+    while (q--) {
+        int t, v;
+        cin >> t >> v;
+        if (t == 1) h.push(v);
+        else a.push(v);
+        int s = 0;
+        ll ans = 0;
+        while (sz(a) > sz(h)) t2.push(a.top()), a.pop();
+
+        while (sz(h)) {
+            if (sz(h) == sz(a) && a.top() < h.top()) {
+                ans += (sz(h) + sz(a)) * (a.top() - s);
+                s = a.top();
+                t2.push(a.top());
+                a.pop();
+            } 
+            else {
+                ans += (sz(h) + sz(a)) * (h.top() - s);
+                s = h.top();
+                if (sz(h) == sz(a)) {
+                    t2.push(a.top());
+                    a.pop();
+                    t1.push(h.top());
+                    h.pop();
+                } 
+                else t1.push(h.top()), h.pop();
+            }
+        }
+        cout << ans << nl;
+        while (sz(t1)) h.push(t1.front()), t1.pop();
+        while (sz(t2)) a.push(t2.front()),t2.pop();
+    }
+}
