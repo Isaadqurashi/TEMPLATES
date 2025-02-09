@@ -6,6 +6,8 @@
 #define pb push_back
 #define vi vector<int>
 #define vll vector<ll>
+#define pi vector<pair<int,int>>
+#define pll vector<pair<ll,ll>>
 #define all(v) v.begin(), v.end()
 #define rall(v) v.rbegin(), v.rend()
 #define nl "\n"
