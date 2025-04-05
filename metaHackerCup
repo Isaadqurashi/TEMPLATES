@@ -13,6 +13,13 @@
 #define nl "\n"
 using namespace std;
 
+#ifndef LOCAL
+#include "algo/debug.h"
+#else
+#define debug(...)
+#define debugArr(...)
+#endif
+
 void saad() {}
 
 int main() {
