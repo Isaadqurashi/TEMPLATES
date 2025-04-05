@@ -14,11 +14,10 @@
 const int MOD = 1e9+7;
 using namespace std;
 
-#ifndef LOCAL
+#ifndef ONLINE_JUDGE
 #include "algo/debug.h"
 #else
-#define debug(...)
-#define debugArr(...)
+#define debug(...) 42
 #endif
 
 void saad(){}
