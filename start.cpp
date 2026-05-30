@@ -2,6 +2,8 @@
 #define fli(i,fc,n) for(int i=fc;i<n;i++)
 #define rli(i,n,rc) for(int i=n;i>rc;i--)
 #define sz(a) a.size()
+#define mx(x) *max_element(all(x))
+#define mn(x) *min_element(all(x))
 #define ll long long
 #define pb push_back
 #define vi vector<int>
